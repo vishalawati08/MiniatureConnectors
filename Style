@@ -1,0 +1,85 @@
+body {
+
+font-family: Arial;
+margin:0;
+background:white;
+
+}
+
+.navbar {
+
+background:white;
+padding:15px;
+border-bottom:1px solid #ccc;
+
+}
+
+.logo {
+
+color:#E2231A;
+font-weight:bold;
+
+}
+
+nav a {
+
+margin:15px;
+text-decoration:none;
+color:black;
+
+}
+
+.hero {
+
+padding:60px;
+
+}
+
+.justify {
+
+text-align:justify;
+
+}
+
+button {
+
+background:#E2231A;
+color:white;
+border:none;
+padding:10px;
+
+}
+
+.grid {
+
+display:flex;
+gap:20px;
+
+}
+
+.card {
+
+border:1px solid #ccc;
+padding:20px;
+
+}
+
+.popup {
+
+display:none;
+position:fixed;
+top:30%;
+left:40%;
+background:white;
+padding:30px;
+border:1px solid black;
+
+}
+
+.assistant {
+
+position:fixed;
+right:10px;
+bottom:10px;
+
+}
