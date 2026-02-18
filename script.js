@@ -1,26 +1,31 @@
 
 function openSample(){
 
-document.getElementById("samplePopup").style.display="block";
+document.getElementById("sampleModal").style.display="block";
 
 }
+
 
 function closeSample(){
 
-document.getElementById("samplePopup").style.display="none";
+document.getElementById("sampleModal").style.display="none";
 
 }
 
-function toggleFAQ(){
 
-let faq = document.getElementById("faq");
+function toggleFAQ(btn){
 
-faq.style.display = faq.style.display==="none"?"block":"none";
+let answer = btn.nextElementSibling;
+
+answer.style.display =
+answer.style.display==="block"?"none":"block";
 
 }
+
 
 function showTab(tab){
 
-document.getElementById("tabContent").innerHTML = tab + " compliance details";
+document.getElementById("tab-content").innerHTML =
+tab + " compliance supported";
 
 }
