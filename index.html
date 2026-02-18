@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
-<title>Miniature Connectors (≤ 2.54 mm) | Molex</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Molex | Miniature Connectors</title>
+
 <link rel="stylesheet" href="style.css">
+
+<script defer src="script.js"></script>
+
 </head>
 
+
 <body>
+
 
 <!-- NAVBAR -->
 
 <header class="navbar">
+
 <div class="logo">MOLEX</div>
 
 <nav>
-<a href="#">Products</a>
-<a href="#">Industries</a>
-<a href="#">Resources</a>
-<a href="#">New Launches</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
+
+<a>Products</a>
+<a>Industries</a>
+<a>Resources</a>
+<a class="highlight">New Launches</a>
+<a>About</a>
+<a>Contact</a>
+
 </nav>
+
 </header>
+
+
 
 <!-- HERO -->
 
@@ -29,59 +44,39 @@
 
 <h1>Miniature Connectors (≤ 2.54 mm)</h1>
 
-<p class="justify">
+<p>
 
-Engineers face significant challenges when selecting connectors for modern electronic systems due to PCB space restrictions and size constraints. Molex miniature connectors uniquely balance mechanical robustness and electrical reliability in compact form factors, enabling reliable performance in HVAC, Consumer, Automotive, Industrial, and Medical applications.
+Engineers face PCB space and size constraints. Molex miniature connectors provide mechanical strength and electrical reliability in compact form, supporting HVAC, Automotive, Consumer, Industrial, and Medical applications.
 
 </p>
+
+
+<div class="hero-buttons">
 
 <button onclick="openSample()">Request Sample</button>
 
+<button class="secondary">Download Resources</button>
+
+</div>
+
 </section>
 
 
-<!-- ENGINEERING REFERENCE -->
+
+<!-- ENGINEERING AUTHORITY -->
 
 <section>
 
-<h2>Engineering Reference: How to Select Connector Pitch</h2>
+<h2>Engineering Reference</h2>
 
-<p class="justify">
+<p>
 
-Connector pitch selection affects electrical performance, mechanical reliability, and PCB utilization. Smaller pitch connectors enable compact design but require careful current and mechanical considerations.
+Connector pitch selection affects performance, density, and durability. Smaller pitch connectors enable compact design while maintaining reliability.
 
 </p>
 
 </section>
 
-
-<!-- COMPARISON TABLE -->
-
-<section>
-
-<h2>Comparison of Miniature Connectors</h2>
-
-<table>
-
-<tr>
-<th>Family</th>
-<th>Pitch</th>
-<th>Lock</th>
-<th>Mated Height</th>
-<th>Applications</th>
-</tr>
-
-<tr>
-<td>PicoBlade</td>
-<td>1.25 mm</td>
-<td>Friction</td>
-<td>Vertical / RA</td>
-<td>Consumer</td>
-</tr>
-
-</table>
-
-</section>
 
 
 <!-- PRODUCT GRID -->
@@ -90,74 +85,80 @@ Connector pitch selection affects electrical performance, mechanical reliability
 
 <h2>Connector Portfolio</h2>
 
-<div class="grid">
+<div class="product-grid">
 
-<div class="card">
+<div class="product-card">
 
 <h3>PicoBlade</h3>
 
+<p>1.25 mm pitch connector</p>
+
 <button>View Product</button>
 
-<button>Download Datasheet</button>
+<button class="secondary">Datasheet</button>
 
 </div>
 
-<div class="card">
+
+<div class="product-card">
 
 <h3>CLIK-Mate</h3>
 
+<p>2.00 mm pitch connector</p>
+
 <button>View Product</button>
 
-<button>Download Datasheet</button>
+<button class="secondary">Datasheet</button>
 
 </div>
+
+
+
+<div class="product-card">
+
+<h3>Micro Lock Plus</h3>
+
+<p>1.25 mm pitch connector</p>
+
+<button>View Product</button>
+
+<button class="secondary">Datasheet</button>
+
+</div>
+
 
 </div>
 
 </section>
 
 
-<!-- COMPLIANCE TABS -->
+
+<!-- COMPLIANCE -->
 
 <section>
 
-<h2>Compliance & Standards</h2>
+<h2>Compliance</h2>
 
 <div class="tabs">
 
+<button onclick="showTab('PFAS')">PFAS Free</button>
+
 <button onclick="showTab('USCAR')">USCAR</button>
-<button onclick="showTab('PFAS')">PFAS</button>
+
+<button onclick="showTab('LV214')">LV214</button>
 
 </div>
 
-<div id="tabContent">
 
-PFAS Free connectors support environmental compliance.
+<p id="tab-content">
 
-</div>
+PFAS Free connectors ensure environmental safety.
+
+</p>
+
 
 </section>
 
-
-<!-- APPLICATIONS -->
-
-<section>
-
-<h2>Applications</h2>
-
-<div class="grid">
-
-<div class="card">HVAC</div>
-
-<div class="card">Automotive</div>
-
-<div class="card">Industrial</div>
-
-<div class="card">Medical</div>
-
-</div>
-
-</section>
 
 
 <!-- FAQ -->
@@ -166,46 +167,11 @@ PFAS Free connectors support environmental compliance.
 
 <h2>Engineering FAQ</h2>
 
-<button onclick="toggleFAQ()">When to use Positive Lock?</button>
 
-<div id="faq" style="display:none">
+<div class="faq-item">
 
-Use Positive Lock for vibration environments.
+<button onclick="toggleFAQ(this)">
 
-</div>
+Positive Lock vs Friction Lock
 
-</section>
-
-
-<!-- SAMPLE POPUP -->
-
-<div id="samplePopup" class="popup">
-
-<h2>Request Sample</h2>
-
-<input placeholder="Name">
-
-<input placeholder="Email">
-
-<button onclick="closeSample()">Submit</button>
-
-</div>
-
-
-<!-- SIDE ASSISTANT -->
-
-<div class="assistant" id="assistant">
-
-<button>Check Stock</button>
-
-<button onclick="openSample()">Request Sample</button>
-
-<button>Talk to Expert</button>
-
-</div>
-
-
-<script src="script.js"></script>
-
-</body>
-</html>
+</
